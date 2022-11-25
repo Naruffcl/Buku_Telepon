@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: bukutelepon
+    name: buku-telepon
     region: singapore
     plan: free
     env: python
