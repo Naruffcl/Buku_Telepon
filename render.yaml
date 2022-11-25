@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: bukutelepon
+    region: singapore
+    plan: free
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn buku_telepon.wsgi:application"
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true

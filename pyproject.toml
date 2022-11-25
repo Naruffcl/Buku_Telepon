@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "buku_telepon"
+version = "0.1.0"
+description = ""
+authors = ["Bagus Pangestu <baguspangestu44@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+django = "3.2.16"
+whitenoise = {extras = ["brotli"], version = "^6.2.0"}
+gunicorn = "^20.1.0"
+xlsxwriter = "^3.0.3"
+pandas = "1.1.5"
+openpyxl = "^3.0.10"
+xlrd = "^2.0.1"
+pyxlsb = "^1.0.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
